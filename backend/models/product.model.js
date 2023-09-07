@@ -3,6 +3,7 @@ const mongoose =require("mongoose")
 const productSchema = mongoose.Schema({
     name:{
         type:String,
+        unique:true,
         required:[true,"please enter the product name"]
     },
     description:{
